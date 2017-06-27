@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="geniusk.rinc.dpcalculator.MainActivity">
+
+    <com.ssomai.android.scalablelayout.ScalableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:scale_base_height="150"
+        app:scale_base_width="100">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#6084ff"
+            android:gravity="center_vertical"
+            android:paddingLeft="32dp"
+            android:text="ScalableLayout DP Calculator"
+            android:textColor="#fff"
+            app:scale_height="15.56"
+            app:scale_textsize="5.56"
+            app:scale_width="100" />
+        <ImageView
+            android:id="@+id/main_infor_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:scale_width="6.67"
+            app:scale_height="6.67"
+            app:scale_left="86.67"
+            app:scale_top="4.44"
+            android:background="@drawable/infor"/>
+
+        <com.ssomai.android.scalablelayout.ScalableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#fff"
+            app:scale_base_height="33.33"
+            app:scale_base_width="100"
+            app:scale_height="33.33"
+            app:scale_top="15.56"
+            app:scale_width="100">
+
+            <EditText
+                android:id="@+id/main_test_edit"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@drawable/main_dp_edit"
+                app:scale_height="11.11"
+                app:scale_left="6.67"
+                app:scale_textsize="4"
+                app:scale_top="10"
+                app:scale_width="86.67" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="DP 수치를 입력해주세요"
+                app:scale_height="5.56"
+                app:scale_textsize="3.89"
+                app:scale_top="22.22"
+                app:scale_width="100" />
+        </com.ssomai.android.scalablelayout.ScalableLayout>
+
+        <com.ssomai.android.scalablelayout.ScalableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#fff"
+            app:scale_base_height="117.78"
+            app:scale_base_width="100"
+            app:scale_height="117.78"
+            app:scale_top="53.33"
+            app:scale_width="100">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="Result is..."
+                android:textColor="#787878"
+                app:scale_height="5.56"
+                app:scale_textsize="3.89"
+                app:scale_top="10.33"
+                app:scale_width="100" />
+
+            <TextView
+                android:id="@+id/main_test_text"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="0"
+                android:textColor="#787878"
+                app:scale_height="15"
+                app:scale_textsize="6"
+                app:scale_top="20.56"
+                app:scale_width="100" />
+        </com.ssomai.android.scalablelayout.ScalableLayout>
+    </com.ssomai.android.scalablelayout.ScalableLayout>
+
+</FrameLayout>
