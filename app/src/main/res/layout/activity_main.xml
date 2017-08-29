@@ -23,15 +23,16 @@
             app:scale_height="15.56"
             app:scale_textsize="5.56"
             app:scale_width="100" />
+
         <ImageView
             android:id="@+id/main_infor_btn"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            app:scale_width="6.67"
+            android:background="@drawable/infor"
             app:scale_height="6.67"
             app:scale_left="86.67"
             app:scale_top="4.44"
-            android:background="@drawable/infor"/>
+            app:scale_width="6.67" />
 
         <com.ssomai.android.scalablelayout.ScalableLayout
             android:layout_width="match_parent"
@@ -48,6 +49,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:background="@drawable/main_dp_edit"
+                android:inputType="numberDecimal"
+                android:digits="0123456789."
                 app:scale_height="11.11"
                 app:scale_left="6.67"
                 app:scale_textsize="4"
