@@ -22,7 +22,7 @@ class MainActivity : AppCompatActivity() {
 
             override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {
                 val txt: String = main_test_edit.text.toString().trim()
-                if (Pattern.matches("^[\\d]+(.[\\d]*)$", txt)) {
+                if (Pattern.matches("[\\d]+(.[\\d]+)*", txt)) {
                     val value: Float = txt.toFloat()
                     val result = getResult(value)
                     main_test_text.text = result.toString()
